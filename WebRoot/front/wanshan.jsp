@@ -47,6 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </div>
     </div>
 
+	<div><span><a href="front/login.jsp"><font color="orange" size="5">登录</font></a></span></div>
     <!-- 宝贝信息 -->
     <form action="UpdateUserServlet_front" method="get">
     <div class="bbxx wrap">

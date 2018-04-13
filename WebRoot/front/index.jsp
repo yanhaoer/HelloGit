@@ -70,7 +70,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		});
 	}
 });
+
 </script>
+
 </head>
 <body>
     <!-- header -->
@@ -86,7 +88,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<li class="header_wdxz">
                     <a href="#">我是买家</a>
                     <ul class="header_xz">  
-                        <li><a href="#">等待发货：<span id="m1"></span></a></li>  
+                        <li><a href="WaitServlet">等待发货：<span id="m1"></span></a></li>  
                         <li><a href="#">待收货：<span id="m2"></span></a></li>  
                         <li><a href="#">购买记录：<span id="m3"></span></a></li>
                     </ul> 
@@ -94,7 +96,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <li class="header_wdxz">
                     <a href="#">我是卖家</a>
                     <ul class="header_xz">  
-                        <li><a href="#">出售中：<span id="s1"></span></a></li>  
+                        <li><a href="sellServlet?u_nickname=${u_map.u_nickname}">出售中：<span id="s1"></span></a></li>  
                         <li><a href="#">待发货：<span id="s2"></span></a></li>  
                         <li><a href="#">成交记录：<span id="s3"></span></a></li>
                     </ul> 
@@ -102,7 +104,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <li class="header_mycenter">
                     <a href="#">个人中心</a>
                     <ul class="header_center">  
-                        <li><a href="front/wanshan.jsp">完善个人信息</a></li>  
+                        <li>
+                        <a href='front/wanshan.jsp'>完善个人信息</a></li>                   
                         <li><a href="front/UpdatePwd.jsp">修改密码</a></li>  
                         <li><a href="#">我的收藏</a></li>  
                     </ul> 
@@ -182,7 +185,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <div class="personal">
             <div class="clearfix">
                 <div class="personal_head"><img src="front/images/dalao.jpg"></div>
-                <p class="personal_hi">Hi  &nbsp;<font color="blue">${u_map.u_nickname}</font> <br>这里有更多你感兴趣的！</p>
+                <p class="personal_hi">Hi  &nbsp;<font id="name" color="blue">${u_map.u_nickname}</font> <br>这里有更多你感兴趣的！</p>
             </div>	
             <div class="clearfix">
                 <a href="front/login.jsp" class="personal_login" >登录</a>
@@ -341,7 +344,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </a>
                 </div>
             </div>
-            <div id="div2" class="section_middle fl">
+            <div id="div2" class="section_middle fl">         
             
             </div>
             <div class="section_right fl">
