@@ -25,7 +25,7 @@ public class loginServlet_front extends HttpServlet {
 	 	if(list!=null && list.size()>0){
 	 		Map<String, Object> map = list.get(0);
 	 		if(map!=null){
-	 		req.getSession().setAttribute("u_map", map); //可跳转任何页面
+	 		req.getSession().setAttribute("u_map", map); 
 	 		
 	 		req.getRequestDispatcher("front/index.jsp").forward(req, resp);
 	 		}

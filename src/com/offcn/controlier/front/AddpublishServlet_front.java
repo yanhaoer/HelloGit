@@ -61,8 +61,8 @@ public class AddpublishServlet_front extends HttpServlet {
 		String amount = req.getParameter("amount");
 		String original_price = req.getParameter("original_price");
 		String transfer_price = req.getParameter("transfer_price");
-			
-		String sql="INSERT INTO u_idle_info (name,idleimg,location,presentation,unit,amount,original_price,transfer_price) VALUES('"+name+"','"+filename+"','"+location+"','"+presentation+"','"+unit+"','"+amount+"','"+original_price+"','"+transfer_price+"')";
+		
+		String sql="INSERT INTO u_idle_info (name,idleimg,location,presentation,unit,amount,original_price,transfer_price,purchasing_date,create_date) VALUES('"+name+"','"+filename+"','"+location+"','"+presentation+"','"+unit+"','"+amount+"','"+original_price+"','"+transfer_price+"',CURRENT_DATE(),CURRENT_DATE())";
 		int n = new BaseDao().executeUpdate(sql);
 		if(n>0){
 			System.out.println("Ìí¼Ó³É¹¦");

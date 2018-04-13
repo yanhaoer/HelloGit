@@ -21,7 +21,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <h1><a href="#"><img src="front/images/logo-2.png"></a></h1>
             <h2>让你的闲置游起来!</h2>
             <ul class="header_menu clearfix">
-                <li><a href="index.html" target="_blank">首页</a></li>
+                <li><a href="front/index.jsp">首页</a></li>
                 <li><a href="#">手机二手</a></li>
                 <li><a href="#">二手车估价</a></li>
                 <li><a href="#">降降降</a></li>

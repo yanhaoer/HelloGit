@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="login_title">密码登录</div>
 				<input name="phonenum" type="text" class="name" placeholder="会员名/邮箱/手机号">
 				<input name="password" type="password" class="password">
-				<input type="submit" class="submit">
+				<input type="submit" class="submit" value="登录">	
 			</form>	
 		</div>
 	</div>

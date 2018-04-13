@@ -76,7 +76,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- header -->
     <div class="header">
         <div class="header_main wrap">
-            <h1><a href="#"><img src="front/images/logo-2.png"></a></h1>
+            <h1><a href="front/index.jsp"><img src="front/images/logo-2.png"></a></h1>
             <h2>让你的闲置游起来!</h2>
             <ul class="header_menu clearfix">
                 <li><a href="front/index.jsp" class="active">首页</a></li>
@@ -168,8 +168,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             </div>
             <div class="lunbo_bd">
                 <ul>
-                    <li><a href="#" target="_blank"><img src="front/images/lunbo.jpg" /></a></li>
-                    <li><a href="#" target="_blank"><img src="front/images/lunbo2.jpg" /></a></li>
+                    <li><a href="idLikeServlet_front?id=6" target="_blank"><img src="front/images/lunbo.jpg" /></a></li>
+                    <li><a href="Like_ershouServlet_front" target="_blank"><img src="front/images/lunbo2.jpg" /></a></li>
                 </ul>
             </div>
             <a class="prev" href="javascript:void(0)"></a>
@@ -181,8 +181,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <!-- 个人中心 -->
         <div class="personal">
             <div class="clearfix">
-                <div class="personal_head"><img src="front/images/danhuang.png"></div>
-                <p class="personal_hi">Hi  &nbsp;<font color="red">${u_map.u_nickname}</font> <br>这里有更多你感兴趣的！</p>
+                <div class="personal_head"><img src="front/images/dalao.jpg"></div>
+                <p class="personal_hi">Hi  &nbsp;<font color="blue">${u_map.u_nickname}</font> <br>这里有更多你感兴趣的！</p>
             </div>	
             <div class="clearfix">
                 <a href="front/login.jsp" class="personal_login" >登录</a>
@@ -209,7 +209,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </ul>
         <div class="tabbd">
             <div id="div1" class="tabc clearfix" style="display:block;">
-			
+            
 			</div>
             <div class="tabc clearfix">
                 <a href="#" target="_blank">

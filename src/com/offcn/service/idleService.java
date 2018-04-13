@@ -38,9 +38,9 @@ public class idleService {
 		String filename=saveImg(request,response);
 		
 		String sql=" INSERT INTO u_idle_info "
-				+ "(NAME,idleimg,presentation,unit,amount,location,purchasing_date,original_price,transfer_price,transfer_mode,transfer_state,percentage,fk_idletype,uidle_state,create_date)  "
+				+ "(NAME,idleimg,presentation,unit,amount,location,purchasing_date,original_price,transfer_price,transfer_mode,transfer_state,percentage,fk_idletype,uidle_state,create_date,fk_fisher)  "
 				+ " VALUES "
-				+ " ('"+name+"','"+filename+"','"+presentation+"','"+unit+"',"+amount+",'"+location+"','"+purchasing_date+"',"+original_price+","+transfer_price+",'"+transfer_mode+"','未交易','"+percentage+"',"+fk_idletype+",'正常',CURRENT_DATE()) ";
+				+ " ('"+name+"','"+filename+"','"+presentation+"','"+unit+"',"+amount+",'"+location+"','"+purchasing_date+"',"+original_price+","+transfer_price+",'"+transfer_mode+"','未交易','"+percentage+"',"+fk_idletype+",'正常',CURRENT_DATE(),'3') ";
 		
 		int n=new BaseDao().executeUpdate(sql);
 		return n;

@@ -19,7 +19,7 @@ public class loginServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		Map<String, Object> map=loginService.login(request, response);
-		if(map!=null){
+		if(map!=null){	
 			request.getSession().setAttribute("map", map);
 			request.getRequestDispatcher("index/index.jsp").forward(request, response);
 		}

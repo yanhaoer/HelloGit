@@ -61,20 +61,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <tr>
                 <td>1</td>
                 <td><img src="idleimg/${imap.idleimg }">${imap.name }</td>
-                <td>￥${imap.transfer_price }</td>
-                <td>${imap.amount }</td>
-                <td>￥${imap.transfer_price*imap.amount }</td>
+                <td>￥${imap.transfer_price}</td>
+                <td>1</td>
+                <td>￥${imap.transfer_price}</td>
             </tr>
             
         </table>
         <form  name="alipayment" action="alipay.trade.page.pay.jsp" method="post">
 	        <div class="clearfix">
 	            <ul class="confirm_q">
-	                <li class="confirm_q_f">实付款：<span>￥</span><i>${imap.transfer_price*imap.amount }</i></li>
+	                <li class="confirm_q_f">实付款：<span>￥</span><i>${imap.transfer_price}</i></li>
 	                <li>寄送至：
 	                	<span>
 			                <input type="text" name="address" />
-			                <input type="hidden" name="WIDtotal_amount" value="${imap.transfer_price*imap.amount }"/>
+			                <input type="hidden" name="WIDtotal_amount" value="${imap.transfer_price}"/>
 			                <input type="hidden" name="WIDsubject" value="<%=new Random().nextInt(99999) %>"/>
 			                <input type="hidden" name="WIDout_trade_no"  value="<%=new Random().nextInt(99999) %>"/>
 			                <input type="hidden" name="WIDbody" />

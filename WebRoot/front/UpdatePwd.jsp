@@ -22,7 +22,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <h1><a href="index.html" target="_blank"></a><img src="front/images/logo-2.png"></h1>
             <h2>让你的闲置游起来!</h2>
             <ul class="header_menu clearfix">
-                <li><a href="index.html" target="_blank">首页</a></li>
+                <li><a href="front/index.jsp">首页</a></li>
                 <li><a href="#">手机二手</a></li>
                 <li><a href="#">二手车估价</a></li>
                 <li><a href="#">降降降</a></li>
@@ -39,8 +39,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <li class="header_mycenter">
                     <a href="#">个人中心</a>
                     <ul class="header_center">  
-                        <li><a href="#">完善个人信息</a></li>  
-                        <li><a href="#">修改密码</a></li>  
+                        <li><a href="front/wanshan.jsp">完善个人信息</a></li>  
+                        <li><a href="front/UpdatePwd.jsp">修改密码</a></li>  
                         <li><a href="#">我的收藏</a></li>  
                     </ul> 
                 </li>
@@ -69,10 +69,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					$('#pwd1').removeAttr('readonly');
 					$('#pwd2').removeAttr('readonly');
 			 }
+			 else{
+			 		$('#m1').html("<font color='red'>×</font>")
+			 }
 			},
 			error:function(){
-					alert("密码错误")
-					$('#m1').html("<font color='red'>×</font>")	
+					alert("失败")
+						
 			}
 		});
 	}	

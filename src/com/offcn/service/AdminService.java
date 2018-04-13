@@ -26,5 +26,5 @@ public class AdminService {
 		
 		int n=new BaseDao().executeUpdate(sql);
 		return n;
-	}
+	}	
 }

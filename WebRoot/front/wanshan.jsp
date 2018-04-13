@@ -38,7 +38,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <a href="#">个人中心</a>
                     <ul class="header_center">  
                         <li><a href="front/wanshan.jsp">完善个人信息</a></li>  
-                        <li><a href="#">修改密码</a></li>  
+                        <li><a href="front/UpdatePwd.jsp">修改密码</a></li>  
                         <li><a href="#">我的收藏</a></li>  
                     </ul> 
                 </li>

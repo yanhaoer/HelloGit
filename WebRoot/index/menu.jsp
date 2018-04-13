@@ -74,6 +74,19 @@
 		</ul>
 	</dd>
 	<!-- 一个模块结束 -->
+	
+	<!-- 一个模块开始 -->
+	<dd>
+		<div class="title">
+			<span><img src="<%=basePath %>images/leftico01.png"/></span>统计报表模块
+		</div>
+		<ul class="menuson">
+			<li class=""><cite></cite><a href="echarts/diqutongji.jsp" >地区统计分布情况</a><i></i></li>
+			<li class=""><cite></cite><a href="echarts/accountup.jsp" >地区统计分布情况</a><i></i></li>
+			<li class=""><cite></cite><a href="echarts/shopType.jsp" >商品分类统计</a><i></i></li>
+		</ul>
+	</dd>
+	<!-- 一个模块结束 -->
 </dl>
 
 <script type="text/javascript" src="<%=basePath %>js/jQuery/jquery.js"></script>
